@@ -75,35 +75,35 @@ body {
 
 /*___________________________________________*/
 
-.window-finder,
-.window-safari,
-.window-apps,
-.window-settings,
-.window-terminal,
-.window-code {
+#window-finder,
+#window-safari,
+#window-apps,
+#window-settings,
+#window-terminal,
+#window-code {
     display: none;
 }
-.window-finder > img,
-.window-safari > img,
-.window-apps > img,
-.window-settings > img,
-.window-terminal > img,
-.window-code > img {
+#window-finder > img,
+#window-safari > img,
+#window-apps > img,
+#window-settings > img,
+#window-terminal > img,
+#window-code > img {
     position: absolute;
     width: 700px;
     height: auto;
     bottom: 50px;
     left: -100px;
 }
-.window-settings > img,
-.window-terminal > img {
+#window-settings > img,
+#window-terminal > img {
     position: absolute;
     height: 400px;
     width: auto;
     bottom: 50px;
     left: -100px;
 }
-.window-safari > img {
+#window-safari > img {
     position: absolute;
     width: 700px;
     height: auto;
@@ -119,97 +119,79 @@ body {
     grid-template-columns: auto auto auto auto auto auto;
     gap: 15px;
 }
-.finder,
-.safari,
-.apps,
-.settings,
-.terminal,
-.code {
+#finder,
+#safari,
+#apps,
+#settings,
+#terminal,
+#code {
     all: unset;
 }
 
 /*___________________________________________*/
 
-.finder > img {
+#finder > img {
     position: relative;
     width: 50px;
 }
-.finder > img:active {
+#finder > img:active {
     animation-name: example;
     animation-duration: 6s;
-}
-.finder:focus .window-finder {
-    display: block;
 }
 
 /*___________________________________________*/
 
-.safari > img {
+#safari > img {
     position: relative;
     width: 50px;
 }
-.safari > img:active {
+#safari > img:active {
     animation-name: example;
     animation-duration: 4s;
 }
-.safari:focus .window-safari {
-    display: block;
-}
 
 /*___________________________________________*/
 
-.apps > img {
+#apps > img {
     position: relative;
     width: 50px;
 }
-.apps > img:active {
+#apps > img:active {
     animation-name: example;
     animation-duration: 6s;
-}
-.apps:focus .window-apps {
-    display: block;
 }
 
 /*___________________________________________*/
 
-.settings > img {
+#settings > img {
     position: relative;
     width: 50px;
 }
-.settings > img:active {
+#settings > img:active {
     animation-name: example;
     animation-duration: 6s;
-}
-.settings:focus .window-settings {
-    display: block;
 }
 
 /*___________________________________________*/
 
-.terminal > img {
+#terminal > img {
     position: relative;
     width: 50px;
 }
-.terminal > img:active {
+#terminal > img:active {
     animation-name: example;
     animation-duration: 6s;
-}
-.terminal:focus .window-terminal {
-    display: block;
 }
 
 /*___________________________________________*/
 
-.code > img {
+#code > img {
     position: relative;
     width: 55px;
 }
-.code > img:active {
+#code > img:active {
     animation-name: example;
     animation-duration: 6s;
-}
-.code:focus .window-code {
-    display: block;
 }
 
 /*___________________________________________*/

@@ -1,16 +1,21 @@
-const button = document.getElementById('bg__btn')
-const body = document.body
+function showElm (a, b) {
+    const button = document.getElementById(a)
+    const elm = document.getElementById(b)
 
-const colors = [
-    'linear-gradient(#d3cce3, #e9e4f0)',
-    'linear-gradient(#c9d6ff, #e2e2e2)',
-    'linear-gradient(#9796f0, #fbc7d4)',
-    'linear-gradient(#ece9e6, #ffffff)',
-]
-
-button.addEventListener('click', changeBackground)
-
-function changeBackground () {
-    var colorIndex = Math.floor(Math.random() * colors.length)
-    body.style.background = colors[colorIndex]
+    var clickCounter = 0
+    button.addEventListener('click', () => {
+        if (clickCounter === 1) {
+            elm.style.display = 'none'
+            clickCounter--
+        } else {
+            elm.style.display = 'block'
+            clickCounter++
+        }
+    })
 }
+
+showElm('finder','window-finder')
+showElm('safari','window-safari')
+showElm('settings','window-settings')
+showElm('terminal','window-terminal')
+showElm('code','window-code')
