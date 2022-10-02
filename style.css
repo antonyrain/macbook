@@ -12,19 +12,12 @@ body {
     padding: 100px;
 }
 
-.bg__change {
-    position: fixed;
-    color: #000;
-    font-size: 1rem;
-    font-family: sans-serif;
-    left: 50px;
+.arrow {
+    position: relative;
+    right: 700px;
 }
-#bg__btn {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: #aaa solid 2px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.arrow > p {
+    transform: rotate(10deg);
 }
 
 /*___________________________________________*/
@@ -52,6 +45,15 @@ body {
     border-radius: 100%;
     border: #555 solid 1px;
     background: #000;
+}
+#screen {
+    display: none;
+    margin: auto;
+    margin-top: 20px;
+    width: calc(890px/1.25);
+    height: calc(500px/1.1);
+    background: #000;
+
 }
 .front-one .display {
     margin: auto;
@@ -283,6 +285,21 @@ body {
         0 0 122px #0fa,
         0 0 171px #0fa;
 }
+#key--power > img{
+    width: 1em;
+}
+#lnk--g {
+    text-decoration: none;
+    color: red;
+}
+#lnk--a {
+    text-decoration: none;
+    color: red;
+}
+#lnk--y {
+    text-decoration: none;
+    color: red;
+}
 .key--w3 {
     width: 4.6em;
 }
@@ -295,7 +312,7 @@ body {
 .key--w6 {
     width: 8.3em;
 }
-.key--space {
+.key--spc {
     width: 18em;
 }
 .key--double > * {

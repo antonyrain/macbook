@@ -9,13 +9,12 @@
 </head>
 <body>
     <div class="main">
-        <!--<div class="bg__change">
-            <button id="bg__btn">Ch Bg</button>
-        </div>-->
+        <div class="arrow"><p>-----></p></div>
         <div class="front-one">
             <div class="front-two">
                 <div class="camera"></div>
                 <div class="display">
+                    <div id="screen"></div>
                     <div class="icons">
                         <button id="finder">
                             <img src="./pics/finder_1.png">
@@ -58,8 +57,8 @@
         <div class="keyboard">
             <div class="keyboard__body">
                 <div class="keyboard__row keyboard__row--h1">
-                    <div data-key="27" class="key--word">
-                        <span>esc</span>
+                    <div data-key="27" class="key--word" id="key--esc">
+                        <span><a id="lnk" href="https://www.fiverr.com/antonyrain/make-a-creative-landing-page-for-you" target="_blank"></a>esc</span>
                     </div>
                     <div data-key="112" class="key--fn">
                         <span>F1</span>
@@ -97,8 +96,8 @@
                     <div data-key="123" class="key--fn">
                         <span>F12</span>
                     </div>
-                    <div data-key="n/a" class="key--word">
-                        <span>pwr</span>
+                    <div data-key="n/a" class="key--word" id="key--power">
+                        <img src="./pics/pwr-icon.png">
                     </div>
                 </div>
                 <div class="keyboard__row">
@@ -168,7 +167,9 @@
                     <div class="key--letter" data-char="E">E</div>
                     <div class="key--letter" data-char="R">R</div>
                     <div class="key--letter" data-char="T">T</div>
-                    <div class="key--letter" data-char="Y">Y</div>
+                    <div class="key--letter" data-char="Y" id="letter--y">
+                        <a id="lnk--y" href="https://www.youtube.com/channel/UCNHpd8w4YJ1qrFQZGlXUUvw" target="_blank">Y</a>
+                    </div>
                     <div class="key--letter" data-char="U">U</div>
                     <div class="key--letter" data-char="I">I</div>
                     <div class="key--letter" data-char="O">O</div>
@@ -190,11 +191,15 @@
                     <div class="key--bottom-left key--word key--w5" data-key="20">
                         <span>caps lock</span>
                     </div>
-                    <div class="key--letter" data-char="A">A</div>
+                    <div class="key--letter" data-char="A" id="letter--a">
+                        <a id="lnk--a" href="https://antonyrain.com" target="_blank">A</a>
+                    </div>
                     <div class="key--letter" data-char="S">S</div>
                     <div class="key--letter" data-char="D">D</div>
                     <div class="key--letter" data-char="F">F</div>
-                    <div class="key--letter" data-char="G">G</div>
+                    <div class="key--letter" data-char="G" id="letter--g">
+                        <a id="lnk--g" href="https://github.com/antonyrain" target="_blank">G</a>
+                    </div>
                     <div class="key--letter" data-char="H">H</div>
                     <div class="key--letter" data-char="J">J</div>
                     <div class="key--letter" data-char="K">K</div>
@@ -251,7 +256,7 @@
                     <div class="key--bottom-right key--word key--w3" data-key="91">
                         <span>command</span>
                     </div>
-                    <div class="key--double key--right key--space" data-key="32" data-char=" ">
+                    <div class="key--double key--right key--spc" data-key="32" data-char=" ">
                         &nbsp;
                     </div>
                     <div class="key--bottom-left key--word key--w3" data-key="93-R">
